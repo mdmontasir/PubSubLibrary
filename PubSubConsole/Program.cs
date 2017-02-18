@@ -23,7 +23,7 @@ namespace PubSubConsole
 
             //proper case the text
 
-            //processGet;
+            //processGet;//
 
             pub.RoomAdded(new Room { RoomNumber = 101 });
             pub.GuestAdded(new Guest { GuestName = "Montasir", Gender = GenderEnum.Male});
