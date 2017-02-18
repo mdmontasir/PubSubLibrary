@@ -1,0 +1,7 @@
+D:\PubSubSIteCore\PubSubLibrary\PubSubLibraryTest\bin\Debug\PubSubLibraryTest.dll
+D:\PubSubSIteCore\PubSubLibrary\PubSubLibraryTest\bin\Debug\PubSubLibraryTest.pdb
+D:\PubSubSIteCore\PubSubLibrary\PubSubLibraryTest\bin\Debug\PubSubLibrary.dll
+D:\PubSubSIteCore\PubSubLibrary\PubSubLibraryTest\bin\Debug\PubSubLibrary.pdb
+D:\PubSubSIteCore\PubSubLibrary\PubSubLibraryTest\obj\Debug\PubSubLibraryTest.csprojResolveAssemblyReference.cache
+D:\PubSubSIteCore\PubSubLibrary\PubSubLibraryTest\obj\Debug\PubSubLibraryTest.dll
+D:\PubSubSIteCore\PubSubLibrary\PubSubLibraryTest\obj\Debug\PubSubLibraryTest.pdb

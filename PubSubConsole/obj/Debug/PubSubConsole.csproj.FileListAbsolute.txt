@@ -1,0 +1,8 @@
+D:\PubSubSIteCore\PubSubLibrary\PubSubConsole\bin\Debug\PubSubConsole.exe.config
+D:\PubSubSIteCore\PubSubLibrary\PubSubConsole\bin\Debug\PubSubConsole.exe
+D:\PubSubSIteCore\PubSubLibrary\PubSubConsole\bin\Debug\PubSubConsole.pdb
+D:\PubSubSIteCore\PubSubLibrary\PubSubConsole\obj\Debug\PubSubConsole.csprojResolveAssemblyReference.cache
+D:\PubSubSIteCore\PubSubLibrary\PubSubConsole\obj\Debug\PubSubConsole.exe
+D:\PubSubSIteCore\PubSubLibrary\PubSubConsole\obj\Debug\PubSubConsole.pdb
+D:\PubSubSIteCore\PubSubLibrary\PubSubConsole\bin\Debug\PubSubLibrary.dll
+D:\PubSubSIteCore\PubSubLibrary\PubSubConsole\bin\Debug\PubSubLibrary.pdb

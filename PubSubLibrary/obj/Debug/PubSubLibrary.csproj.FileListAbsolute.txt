@@ -1,0 +1,4 @@
+D:\PubSubSIteCore\PubSubLibrary\PubSubLibrary\bin\Debug\PubSubLibrary.dll
+D:\PubSubSIteCore\PubSubLibrary\PubSubLibrary\bin\Debug\PubSubLibrary.pdb
+D:\PubSubSIteCore\PubSubLibrary\PubSubLibrary\obj\Debug\PubSubLibrary.dll
+D:\PubSubSIteCore\PubSubLibrary\PubSubLibrary\obj\Debug\PubSubLibrary.pdb
