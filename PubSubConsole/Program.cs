@@ -1,35 +1,64 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
 
 namespace PubSubConsole
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            RoomSubscriber room = new RoomSubscriber();
-            GuestSubscriber guest = new GuestSubscriber();
+            var bedSubscriber = new BedSubscriber();
+            var guestSubscriber = new GuestSubscriber();
+            var guestPublisher = new GuestPublisher();
+            var bedPublisher = new BedPublisher();
+            
+            Console.WriteLine("Enter First Name : ");
+            string firstName = Console.ReadLine();
 
-            //guest.GuestUnsubscribe();
+            Console.WriteLine("Enter Last Name : ");
+            string lastName = Console.ReadLine();
 
-            Publisher pub = new Publisher();
+            TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+            string guestName = textInfo.ToTitleCase(firstName + " " + lastName);
 
-            //input guest first name // last name
+            Console.WriteLine("Enter Guest Gender? Enter M or F");
+            var guestGender = Console.ReadLine();
 
-            //transfirm e f+l = full name
+            var genderEnum = GenderEnum.Male;
+            if (!string.IsNullOrEmpty(guestGender) && guestGender.ToUpper() == "F")
+            {
+                genderEnum = GenderEnum.Female;
+            }
 
-            //proper case the text
+            guestPublisher.GuestAdded(new Guest {GuestName = guestName, Gender = genderEnum});
 
-            //processGet;//
+            Console.WriteLine("Enter total number of guest(s)? Enter number");
+            var totalGuestNumber = Console.ReadLine();
+            if (ValidateNumber(totalGuestNumber))
+            {
+                bedPublisher.BedReady(new Bed {BedNumber = Convert.ToInt16(totalGuestNumber)});
+            }
+            else
+            {
+                Console.WriteLine("It accepts number only.");
+            }
 
-            pub.RoomAdded(new Room { RoomNumber = 101 });
-            pub.GuestAdded(new Guest { GuestName = "Montasir", Gender = GenderEnum.Male});
-            pub.GuestAdded(new Guest { GuestName = "Nishat", Gender = GenderEnum.Female });
+            //guest unsubscribe
+            guestSubscriber.GuestUnsubscribe();
 
+            guestPublisher.GuestAdded(new Guest {GuestName = guestName, Gender = genderEnum});
+           
             Console.ReadKey();
+        }
+
+        static private bool ValidateNumber(string totalGuestNumber)
+        {
+            int total;
+            if (int.TryParse(totalGuestNumber, out total))
+            {
+                return true;
+            }
+            return false;
         }
     }
 

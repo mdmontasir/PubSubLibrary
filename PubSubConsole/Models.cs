@@ -1,26 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PubSubConsole
 {
-    public class Room
+    public class Bed
     {
-        public int RoomNumber { get; set; }
+        public int BedNumber { get; set; }
 
-        public string MakeUpRoom()
+        public string MakeUpBed()
         {
-            return "Room " + RoomNumber + " is ready.";
+            return  BedNumber + " bed(s) is ready.";
         }
-
-    }
-
-    public enum GenderEnum : int
-    {
-        Male=1,
-        Female
     }
 
     public class Guest
